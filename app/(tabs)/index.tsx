@@ -2,7 +2,7 @@ import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import { fetchPopularMovies } from "@/services/api";
 import useFetch from "@/services/useFetch";
-import { useRouter } from "expo-router";
+// import { useRouter } from "expo-router";
 import {
   ActivityIndicator,
   FlatList,
@@ -12,10 +12,9 @@ import {
   View,
 } from "react-native";
 import MovieCard from "../components/MovieCard";
-import SearchBar from "../components/SearchBar";
 
 export default function Index() {
-  const router = useRouter();
+  // const router = useRouter();
 
   const {
     data: movies,
@@ -43,10 +42,10 @@ export default function Index() {
           <Text>Error: {moviesError?.message}</Text>
         ) : (
           <View className="flex-1 mt-5">
-            <SearchBar
+            {/* <SearchBar
               onPress={() => router.push("/search")}
               placeholder="Search for a movie"
-            />
+            /> */}
 
             <>
               <Text className="text-lg text-white font-bold mt-5 mb-3">
