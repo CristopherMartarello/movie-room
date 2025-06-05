@@ -44,7 +44,7 @@ const _Layout = () => {
           marginBottom: 36,
           height: 52,
           position: "absolute",
-          // overflow: 'hidden',
+          // overflow: "hidden",
           borderWidth: 1,
           borderColor: "#0F0D23",
         },
